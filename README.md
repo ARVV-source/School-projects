@@ -1,0 +1,1 @@
+This repository is just me uploading the works i do at my university to github, now i just use it to store things like homework or personal little things i do to practice but in the future maybe i will see this repository and laugh of how shitty my skills were, or maybe i just will be disapointed or smthing aronou men 
