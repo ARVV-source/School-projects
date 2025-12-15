@@ -1,0 +1,147 @@
+<!-- Para hacer comentarios se hace asi al parecer-->
+<!DOCTYPE html>
+<html>
+  <!-- Meta datos como el por ejemplo como te va a salir la pestana-->
+  <head>
+    <title> Document </title>
+    <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+    </style>
+    
+  </head>
+
+  <!-- Contenido de la web-->
+  <body>
+
+    <!-- Headers -->
+    <h1>Heading</h1>
+    <h2>Heading de nivel 2 (subtitulo)</h2>
+    <h3>Heading de nivel 3 (subsubtitulo)</h3>
+    <h6>Este pedo del hehading se puede hazta el tipo 6</h6>
+
+    <!-- Parrafos -->
+    <p> P es la etiqueta de parrafo</p>
+    <p> otro parrafo </p>
+    <hr>
+    <p> Si quieres separar elementos o madres asi ps avientate un hr padre </p>
+    <p>Si quieres identificar algo como texto o asi puedes usar span <span>de esta manera</span>, despues con 
+      eso usando css puedes hacer cositas, como esto <span style="color: blueviolet;"> Nigger</span> <br>Para 
+      hacer saltos de lineas y mamadas de esas se usa br <br>Ese culo hace prrrrr</p>
+
+    <!-- Listas -->
+     <!-- no ordenada -->
+    <ul>  
+      <li>elemento 1</li>
+      <li>elemento 2</li>
+      <li>elemento 3</li>
+      <li>elemento 4</li>
+    </ul>
+
+     <!-- ordenada -->
+    <ol> 
+      <li>elemento 1</li>
+      <li>elemento 2</li>
+      <li>elemento 3</li>
+      <li>elemento 4</li>
+    </ol>
+
+    <ol> 
+      <li value="10">elemento 1</li>
+      <li>elemento 2</li>
+      <li>elemento 3</li>
+      <li>elemento 4</li>
+    </ol>
+
+    <ol> 
+      <li>elemento 1</li>
+        <ol>
+          <li style="list-style-type: lower-alpha;">elemento 1</li>
+          <li style="list-style-type: lower-alpha;">elemento 2</li>
+        </ol>
+      <li>elemento 2</li>
+        <ol>
+          <li style="list-style-type: lower-roman;">elemento 1</li>
+          <li style="list-style-type: lower-roman;">elemento 2</li>
+        </ol>
+      <li>elemento 3</li>
+      <li>elemento 4</li>
+    </ol>
+
+    <!-- Tablas -->
+     <p>Mercadito el papu</p>
+     <table style="width: 300px;">
+      <thead>
+        <tr>
+          <th> Producto </th>
+          <th> Cantidad </th>
+          <th> Precio </th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td> Manzana </td>
+            <td> 5 </td>
+            <td> 10.99 </td>
+        </tr>
+          <tr>
+            <td> Naranja </td>
+            <td> 9 </td>
+            <td> 4.87 </td>
+          </tr>
+      </tbody>
+      <tfoot>
+        <td></td>
+        <td>total:</td>
+        <td> 10.98</td>
+      </tfoot>
+     </table>
+     <br>
+
+    <!-- Anclas -->
+    <a href="https://www.google.com/">  La etiqueta a (anchor o ancla en espanaco) es para navegar entonces usas
+       el href para referenciar un sitio y pones la url<br></a>
+    <a target="_blank" href="https://www.youtube.com/watch?v=xvFZjo5PgG0">Si quieres que el link te mande al sitio en otra pestana 
+      le agregas la propiedad target="_blank"</a>
+
+    <p>Para poner imagenes lit hay una etiqueta img solo que esa ya viene cerrada por algun motivo osea se pone el slash hasta el 
+      final en la misma apertura despues se pone el source de la imagen</p>
+    <!-- Imagenes -->
+    <img src="recursosGraficosTesting/The new abnormal.jpg" width="300" />
+
+    <p>Ahora hay que ver los formularios para robar datos y la chingada</p>
+    
+    <!--Formularios-->
+
+    <!-- Label es una forma para poner un texto a lado de tu formulario lo que sirve para dar contexto, for es un identificador
+     para poner exactamente a que input se refiere tu label asi por ejemplo puedes tener multiples inputs con multiples identificadores
+    el id es para labels o asi pero lo importante es name porque tiene una funcion de llave en la cual la informacion que mandes se podra
+    identificar a partir de esa llave en un servidor por ejemplo es como crear una variable tipo formularioNombre = "el nombre", placeholder
+    tiene la misma funcion que label pero lo pone como dentro de la casilla finalmente type es para poner el tipo de formulario que sera
+    por ejemplo text para texto, password oculta el texto, email te pide un correo, checkbox se hace una casilla seleccionable, etc...-->
+    <form action="/formulario" method="post">
+      <label for="nombre">Nombre</label> 
+      <input id="nombre" name="formularioNombre" placeholder="Nombre"/> 
+      <br>
+      <label for="Bodycount">Bodycount</label> 
+      <input type="text" id="Bodycount" name="formularioBodycount" placeholder="Bodycount"/> 
+      <p>Como te sientes?</p>
+      <label for="bien">Bien</label>
+      <input id="bien" type="checkbox"/>
+      <label for="mal">Mal</label>
+      <input id="mal" type="checkbox"/>
+      <br>
+      <br>
+      <label for="comentarios">Tiene alguna opinion hasta el momento?</label>
+      <br>
+      <textarea rows="6" cols="30" id="comentarios" placeholder="comentarios"></textarea>
+      <br>
+    
+    <!-- Botones -->
+      <button type="buton">boton</button> 
+      <button type="reset">reset</button> 
+      <button type="submir">enviar</button>
+    </form>
+  </body>
+</html>
