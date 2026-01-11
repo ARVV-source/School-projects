@@ -36,6 +36,5 @@ print(total)
 diff= num_one - num_two
 print(diff)
 radio = 30
-area= 3.1416*(radio^2)
+area= 3.1416*(radio**2)
 print(area)
-
