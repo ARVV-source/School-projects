@@ -1,13 +1,13 @@
 module Helper exposing (..)
 
 
-duplic : number -> number
-duplic inputNum =
+double : number -> number
+double inputNum =
     2 * inputNum
 
 
-alCuad : number -> number
-alCuad num =
+square : number -> number
+square num =
     num ^ 2
 
 
