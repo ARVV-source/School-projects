@@ -1,0 +1,19 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "Curso de typescript",
+  "license": "ISC",
+  "author": "Christopher Emilio Arvizu Gonzalez",
+  "type": "commonjs",
+  "main": "app.ts",
+  "scripts": {
+      "dev": "node ./src/app.ts"
+  },
+  "dependencies": {
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.10",
+    "tsx": "^4.21.0"
+  }
+}
