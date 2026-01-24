@@ -1,18 +1,22 @@
 module Main exposing (..)
 
-canBuyAlcohol : Int -> Bool
-canBuyAlcohol age =
+canBuyAlcohol : List Int -> List Bool
+canBuyAlcohol edades =
+  List.map buyAlc edades 
+
+buyAlc : Int -> Bool
+buyAlc age =
   if age > 17 then
     True
   else
     False
 
-allUpperCase : String -> String
-allUpperCase name =
+indAllUpperCase : String -> String
+indAllUpperCase name =
   String.toUpper name
 
-approveCourse : Float -> String
-approveCourse grade =
+indApproveCourse : Float -> String
+indApproveCourse grade =
   if grade >= 6 then
     "Approve"
   else

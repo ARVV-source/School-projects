@@ -7,7 +7,7 @@
   "type": "commonjs",
   "main": "app.ts",
   "scripts": {
-      "dev": "node ./src/app.ts"
+      "dev": "tsx watch --watch ./src/app.ts"
   },
   "dependencies": {
     "typescript": "^5.9.3"
