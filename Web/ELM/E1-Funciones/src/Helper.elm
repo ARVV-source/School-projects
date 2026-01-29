@@ -1,10 +1,8 @@
 module Helper exposing (..)
 
-
 double : number -> number
 double inputNum =
     2 * inputNum
-
 
 square : number -> number
 square num =
