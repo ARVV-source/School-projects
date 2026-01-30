@@ -41,7 +41,7 @@ const user : User = {
   tags: ["hola"]
 }
 
-interface Animal {
+export interface Animal {
   name: String,
   type: String,
   age: number,

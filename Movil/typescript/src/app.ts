@@ -1,1 +1,1 @@
-import "./bases/objects";
+import "./bases/arrays";
