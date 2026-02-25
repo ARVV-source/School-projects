@@ -6,8 +6,8 @@ export default function Index() {
   const [text, setText] = useState("");
   
   return (
-    <View>
-      <View>
+    <View style = {styles.view}>
+      <View >
         <TextInput
         value={draft}
         onChangeText = {(input) => setDraft(input)}
@@ -28,13 +28,19 @@ export default function Index() {
 }
 const styles = StyleSheet.create ({
   cuadroText : {
-    borderRadius : 20,
     backgroundColor : "white",
-    height : 35,
-    padding : 20},
+    borderRadius : 20,
+    padding : 10},
+    
 
-    textCont : {
+  textCont : {
     alignItems : "center",
     justifyContent : "center",
-    flex: 1}
+    height : 40},
+
+  view : {
+    flex : 1,
+    alignItems : "center",
+    justifyContent : "center",
+    }
   })
