@@ -4,7 +4,6 @@ import React, { useState } from "react";
 export default function Index() {
   const [draft, setDraft] = useState("Aun no has escrito nada");
   const [text, setText] = useState("No hay mensajes");
-  
   return (
     <View style = {styles.view}>
       <View >
@@ -44,3 +43,5 @@ const styles = StyleSheet.create ({
     justifyContent : "center",
     }
   })
+
+  
