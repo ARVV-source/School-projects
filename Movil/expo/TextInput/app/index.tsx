@@ -2,8 +2,8 @@ import { Text, TextInput, View, StyleSheet} from "react-native";
 import React, { useState } from "react";
 
 export default function Index() {
-  const [draft, setDraft] = useState("");
-  const [text, setText] = useState("");
+  const [draft, setDraft] = useState("Aun no has escrito nada");
+  const [text, setText] = useState("No hay mensajes");
   
   return (
     <View style = {styles.view}>
@@ -11,10 +11,10 @@ export default function Index() {
         <TextInput
         value={draft}
         onChangeText = {(input) => setDraft(input)}
-        placeholder={"Aun no has escrito nada"}
         onSelectionChange={() => setText("escribiendo...")}
-        onSubmitEditing = {() => {setText(draft)
-                                  setDraft("")
+        onSubmitEditing = {() => {
+          setText(draft)
+          setDraft("")
         }}
         //blurOnSubmit={false}
         style = {styles.cuadroText}
