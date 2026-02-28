@@ -1,3 +1,4 @@
+#_____________________________________________________________#
 class Node:
   def __init__ (self, data):
     self.data = data
@@ -8,8 +9,6 @@ class Node:
 
   def getNext(self):
     return self.next
-  
-#_____________________________________________________________#
 
 class Line:
   head = None
@@ -76,6 +75,21 @@ class Line:
           current = current.next
           pass
       return -1
+    
+print("_____________________________________________________________")
+print("Colas")
+line = Line()
+line.queue("hola")
+line.queue("mundo")
+line.queue("Python")
+print(line.Dequeue())
+print(line.peek())
+print(line.size())
+line.show()
+print(line.isEmpty())
+print(line.find("Python"))
+print(line.find("Java"))
+print("_____________________________________________________________")
 
 #_____________________________________________________________#
 
@@ -121,6 +135,19 @@ class Stack:
       return True
     else:
       return False
+
+print("_____________________________________________________________")
+print("Pilas")
+stack = Stack()
+stack.push("silla 1")
+stack.push("silla 2")
+stack.push("silla 3")
+print(stack.pop())
+print(stack.peek())
+print(stack.size())
+stack.show()
+print(stack.isEmpty())
+print("_____________________________________________________________")
 
 #_____________________________________________________________#
 
@@ -202,3 +229,18 @@ class List:
       return True
     else:
       return False
+
+print("_____________________________________________________________")
+lst = List()
+print("Listas")
+lst.add(1)
+lst.add(2)
+lst.add(4)
+lst.show()
+lst.insertAt(3, 2)
+lst.show()
+lst.removeValue(2)
+lst.show()
+lst.removePosition(3)
+lst.show()
+print("_____________________________________________________________")
