@@ -1,0 +1,45 @@
+Records: Permiten agrupar caracteristicas/ atributos/ variables en una sola entidad
+  type annotation:
+    mi record : {
+                nombre : String,
+                id : int 
+                }
+    mi record = {
+                nombre = "Juan"
+                id = 203342
+                }
+
+Alias: asigna un nombre a un tipo de dato
+  type annotation:
+    type alias Record =
+                {
+                nombre : String,
+                id : int 
+                }
+
+    Record =    {
+                nombre = "Juan"
+                id = 203342
+                }
+  Beneficios
+  +Ahorras codigo en los type annotation
+  +Da mas contexto del codigo
+
+Types: tipo de dato personalizado con valores definidos por el programador
+  type annotation:
+    type MyBool =
+    |yes
+    |No 
+    |Maybe
+
+Componentes: Estructura basada en partes pequeñas y sencillas que forman un sistema complejo
+
+lambdas: Función anonima de un solo uso
+  type annotation:
+    (\ parametro parametro2 -> cuerpo de funcion)
+
+elm arquitecture
++Model: Forma de todos mis estados {}
++View: Transforma un estado en una interfaz grafica (view : model -> Html.Html Msg)
++update: Es una funcion que actualiza el estado actual (update : Msg -> model -> model ) 
+  Msg: son las posibles interacciones
