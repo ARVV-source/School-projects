@@ -7,24 +7,24 @@ export default function pokemonCard ({pokeData} : {pokeData: any}) {
     </Text>
   
   } else {
-  return (
-    <View style={styles.card}>
-      <View style={styles.imageContainer}>
-        <Image 
-          source={{uri:pokeData.sprites.front_default}} 
-          style={styles.image} 
-        />
+    return (
+      <View style={styles.card}>
+        <View style={styles.imageContainer}>
+          <Image 
+            source={{uri:pokeData.sprites.front_default}} 
+            style={styles.image} 
+          />
+        </View>
+        <View style={styles.infoContainer}>
+          <Text style={styles.nombre}>
+            {pokeData.name}
+          </Text>
+          <Text style={styles.id}>
+            ID: {pokeData.id}
+          </Text>
+        </View>
       </View>
-      <View style={styles.infoContainer}>
-        <Text style={styles.nombre}>
-          {pokeData.name}
-        </Text>
-        <Text style={styles.id}>
-          ID: {pokeData.id}
-        </Text>
-      </View>
-    </View>
-  )
+    )
 }
 }
 const styles = StyleSheet.create({
