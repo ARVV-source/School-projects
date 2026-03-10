@@ -57,6 +57,7 @@ class Stack:
 class PostFix:
   def evalPostFix(self, expresion):
     myStack = Stack()
+    expresion = self.split(expresion)
     for i in expresion:
       if i in ["+", "-", "/", "*"]:
         b = myStack.pop()
@@ -78,6 +79,23 @@ class PostFix:
       else:
         myStack.push(int(i))
     return myStack.pop()
+  
+  def split(self, expresion, number = "", newExpresion = []):
+    for i in expresion:
+      if i in ["1","2","3","4","5","6","7","8","9"]:
+        number = number+i
+
+      elif i == " ":
+        if number == "":
+          pass
+        else:
+          newExpresion.append(number)
+          number = ""
+
+      elif i in ["+", "-", "/", "*"]:
+        newExpresion.append(i)
+    return newExpresion
+
 
 postfix = PostFix()
-print(postfix.evalPostFix("352*+73*-"))
+print(postfix.evalPostFix("5 6 2 + * 12 4 / -"))
