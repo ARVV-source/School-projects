@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
-import {View} from 'react-native'
+import { router } from 'expo-router'
+import {View, Pressable} from 'react-native'
 import PokemonCard from '@/components/pokemonCard'
 
 export default function index () {
@@ -23,6 +24,7 @@ export default function index () {
 
   return (
     <View>
+      <Pressable onPress={() => router.push("/new-screen")}></Pressable>
       <PokemonCard pokeData={pokeData}/>
     </View>
   )
