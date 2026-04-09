@@ -1,0 +1,19 @@
+// Red de Transporte - Ciudades
+graph {
+	rankdir=LR size="8,6"
+	node [fillcolor="#1976D2" fontcolor=white fontname=Arial fontsize=12 height=0.8 shape=circle style=filled width=0.8]
+	Madrid [label=Madrid]
+	Barcelona [label=Barcelona]
+	Valencia [label=Valencia]
+	Sevilla [label=Sevilla]
+	"Málaga" [label="Málaga"]
+	Bilbao [label=Bilbao]
+	Madrid -- Barcelona [label=620 color="#2E7D32"]
+	Madrid -- Valencia [label=360 color="#2E7D32"]
+	Madrid -- Sevilla [label=540 color="#2E7D32"]
+	Madrid -- Bilbao [label=400 color="#2E7D32"]
+	Barcelona -- Valencia [label=480 color="#2E7D32"]
+	Barcelona -- Bilbao [label=650 color="#2E7D32"]
+	Valencia -- Sevilla [label=700 color="#2E7D32"]
+	Sevilla -- "Málaga" [label=250 color="#2E7D32"]
+}

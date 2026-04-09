@@ -1,0 +1,18 @@
+// Grafo No Conexo
+graph {
+	rankdir=LR size="8,6"
+	node [fillcolor="#1976D2" fontcolor=white fontname=Arial fontsize=12 height=0.8 shape=circle style=filled width=0.8]
+	A [label=A]
+	B [label=B]
+	C [label=C]
+	D [label=D]
+	E [label=E]
+	F [label=F]
+	G [label=G]
+	A -- B [label="" color="#2E7D32"]
+	A -- C [label="" color="#2E7D32"]
+	B -- C [label="" color="#2E7D32"]
+	D -- E [label="" color="#2E7D32"]
+	D -- F [label="" color="#2E7D32"]
+	E -- F [label="" color="#2E7D32"]
+}
